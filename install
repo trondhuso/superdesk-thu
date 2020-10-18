@@ -2,6 +2,11 @@
 # http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -exuo pipefail
 
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
+apt update && apt dist-upgrade
+
 export DEBIAN_FRONTEND=noninteractive
 export DBUS_SESSION_BUS_ADDRESS=/dev/null
 
